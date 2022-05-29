@@ -6,6 +6,6 @@ instalasi untuk penggunaan lokal/ luring/ offline
 3. unduh aplikasi dan extract 
 4. buka cmd di folder tempat aplikasi
 5. jalankan perintah
- - composer intall
+ - composer install
  - php spark migrate --all
  - php spark db:seed DataSeeder
