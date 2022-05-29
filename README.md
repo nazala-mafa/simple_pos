@@ -1,6 +1,6 @@
 # Aplikasi POS (point of sale) / Aplikasi Kasir
 
-## Instalasi untuk penggunaan lokal/ luring/ offline
+## Instalasi untuk penggunaan offline
 1. Install composer
 2. Install xampp
 3. Unduh aplikasi dan extract 
