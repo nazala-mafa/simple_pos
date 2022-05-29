@@ -1,0 +1,9 @@
+CI_ENVIRONMENT = development
+
+app.indexPage = ''
+
+database.default.hostname = localhost
+database.default.database = simple_pos
+database.default.username = root
+database.default.password = 1234
+database.default.DBDriver = MySQLi
