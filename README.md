@@ -5,17 +5,20 @@
 2. Install xampp
 3. Unduh aplikasi dan extract 
 4. Ubah file `env` menjadi `.env`
-5. Buat database dengan nama `simple_app`
-6. Buka cmd di folder tempat aplikasi
-7. Jalankan perintah
+5. Sesuaikan file `.env`
+6. Buat database dengan nama `simple_app`
+7. Buka cmd di folder tempat aplikasi
+8. Jalankan perintah
  - `composer update`
  - `php spark migrate --all`
  - `php spark db:seed DataSeeder`
 
 ## Instalasi untuk penggunaan online
-- Clone repository
-- Ubah file `env` menjadi `.env`
-- Buat database
-- Jalankan `composer update`
-- Jalankan `php spark migrate --all`
-- Jalankan `php spark db:seed DataSeeder`
+1. Clone repository
+2. Ubah file `env` menjadi `.env`
+3. Sesuaikan `.env`
+4. Buat database
+5. Jalankan Perintah
+ - `composer update`
+ - `php spark migrate --all`
+ - `php spark db:seed DataSeeder`
