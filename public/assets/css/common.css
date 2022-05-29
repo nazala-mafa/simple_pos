@@ -1,0 +1,7 @@
+.bg-img-10 {
+  width:10em;
+  height:10em;
+  display:inline-block;
+  background-size: cover;
+  background-position: center;
+}

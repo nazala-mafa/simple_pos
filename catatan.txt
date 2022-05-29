@@ -1,0 +1,9 @@
+manipulasi data order dan supply
+order_detail tembah kolom harga beli
+
+akses supplier
+akese customers
+
+draft
+ready stock
+sold out
