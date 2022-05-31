@@ -102,7 +102,7 @@ class Customers extends ResourcePresenter
             $img->move(FCPATH.'uploads/imgs/'.user_id().'/customers', $newImageName);
 
             //buat folder u/ nampung img kecil
-            if( !model('App\Models\CustomersModel')->get()->getNumRows() ) {
+            if( !is_dir(FCPATH.'uploads/imgs/'.user_id().'/customers/150') && !is_dir(mkdir(FCPATH.'uploads/imgs/'.user_id().'/customers/300')) ) {
                 mkdir(FCPATH.'uploads/imgs/'.user_id().'/customers/150');
                 mkdir(FCPATH.'uploads/imgs/'.user_id().'/customers/300');
             }

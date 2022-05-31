@@ -14,9 +14,7 @@
           <div class="card-body">
             
             <div class="text-center">
-              <div class="bg-img-10 <?= (session('errors.image'))? 'is-invalid': '' ?>" id="input-image-btn" style="cursor:pointer;">
-                <img src="<?= site_url() ?>uploads/imgs/<?=user_id()?>/products/150/<?= $data['image'] ?>" alt="">
-              </div>
+              <div class="bg-img-10 <?= (session('errors.image'))? 'is-invalid': '' ?>" id="input-image-btn" style="cursor:pointer;background-image:url('<?= site_url() ?>uploads/imgs/<?=user_id()?>/products/150/<?= $data['image'] ?>')"></div>
               <input type="file" name="image" id="input-image" class="d-none">
               <div class="text-danger"> <?= session('errors.image') ?> </div>
             </div>

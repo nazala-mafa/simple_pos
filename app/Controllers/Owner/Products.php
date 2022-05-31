@@ -158,7 +158,7 @@ class Products extends ResourcePresenter
             $img->move(FCPATH.'uploads/imgs/'.user_id().'/products', $newImageName);
 
             //buat folder u/ nampung img kecil
-            if( !model('App\Models\ProductsModel')->getAll() ) {
+            if( !is_dir(FCPATH.'uploads/imgs/'.user_id().'/products/150') && !is_dir(mkdir(FCPATH.'uploads/imgs/'.user_id().'/products/300')) ) {
                 mkdir(FCPATH.'uploads/imgs/'.user_id().'/products/150');
                 mkdir(FCPATH.'uploads/imgs/'.user_id().'/products/300');
             }
@@ -203,7 +203,6 @@ class Products extends ResourcePresenter
      */
     public function update($id = null)
     {
-        return false;
         //init var
         $req = $this->request->getPost();
         $data = [
@@ -226,7 +225,7 @@ class Products extends ResourcePresenter
 
         //update
         $this->model->update($id, $data);
-        if( $cats_id = $req['categories_id'] ) $this->model->updateCategories( $id , $cats_id ); 
+        if( isset($req['categories_id']) ) $this->model->updateCategories( $id , $req['categories_id'] ); 
 
         //ret
         session()->setFlashdata('success', 'barang berhasil diedit');
